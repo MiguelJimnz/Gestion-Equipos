@@ -36,7 +36,7 @@
         </tr>
 
         <?php
-        $resultado = $conexion->query("SELECT * FROM equipos ORDER BY creado_en DESC LIMIT 20");
+        $resultado = $conexion->query("SELECT * FROM equipos ORDER BY id DESC LIMIT 20");
 
         foreach ($resultado as $fila) {
             echo "<tr>
